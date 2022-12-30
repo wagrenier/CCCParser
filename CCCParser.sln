@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCCParser", "CCCParser\CCCParser.csproj", "{E616C6CF-EA79-4D06-BC0F-96FA2B5D1826}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E616C6CF-EA79-4D06-BC0F-96FA2B5D1826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E616C6CF-EA79-4D06-BC0F-96FA2B5D1826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E616C6CF-EA79-4D06-BC0F-96FA2B5D1826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E616C6CF-EA79-4D06-BC0F-96FA2B5D1826}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
