@@ -2,5 +2,5 @@
 
 public sealed class CCCFunction
 {
-    public string name { get; set; }
+    public string Name { get; set; }
 }
