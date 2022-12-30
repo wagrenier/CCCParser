@@ -16,6 +16,7 @@ public class Program
 
         foreach (var cFile in j.Files)
         {
+            Extensions.CreateFiles(cFile);
             Console.WriteLine(cFile.Path);
         }
     }
