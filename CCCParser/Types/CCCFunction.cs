@@ -1,7 +1,6 @@
-﻿namespace CCCParser.Types
+﻿namespace CCCParser.Types;
+
+public sealed class CCCFunction
 {
-    public sealed class CCCFunction
-    {
-        public string name { get; set; }
-    }
+    public string name { get; set; }
 }

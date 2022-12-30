@@ -1,7 +1,6 @@
-﻿namespace CCCParser.Types
-{
-    public sealed class CCCGlobalType
-    {
+﻿namespace CCCParser.Types;
 
-    }
+public sealed class CCCGlobalType
+{
+
 }

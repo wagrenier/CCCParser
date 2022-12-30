@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace CCCParser.Types
+namespace CCCParser.Types;
+
+public sealed class CCCOutput
 {
-    public sealed class CCCOutput
-    {
-        public List<CCCFile> Files { get; set; }
-    }
+    public List<CCCFile> Files { get; set; }
 }
