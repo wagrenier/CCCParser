@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Update="resources\FatalFrame2.json">
+      <None Update="Resources\FatalFrame2.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
     </ItemGroup>
