@@ -1,22 +1,28 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
+using System.Linq;
 using System.Text.Json;
 using CCCParser.Types;
 
-namespace CCCParser;
-
-public class Program
+var cccOutput = JsonSerializer.Deserialize<CCCOutput>(File.ReadAllText("Resources/FatalFrame2.json"), new JsonSerializerOptions
 {
-    public static void Main(string[] args)
+    PropertyNameCaseInsensitive = true
+});
+        
+using (var writer = new StreamWriter("file.csv"))
+{
+    writer.WriteLine("File (# Fun) / Function Name,Size (bytes),# Instructions,% Decomp,Decomp.me");
+            
+    foreach (var cFile in cccOutput.Files)
     {
-        var j = JsonSerializer.Deserialize<CCCOutput>(File.ReadAllText("Resources/FatalFrame2.json"), new JsonSerializerOptions
-        {
-            PropertyNameCaseInsensitive = true
-        });
+        writer.WriteLine($"{cFile.Path} ({cFile.Functions.Count})");
 
-        foreach (var cFile in j.Files)
+        foreach (CCCFunction func in cFile.Functions.Select(funcId => cccOutput.Functions[funcId]))
         {
-            Console.WriteLine(cFile.Path);
+            writer.WriteLine($"\"{func.Name}\",{func.size},{func.size >> 2},0%,,");
         }
+
+        writer.WriteLine();
     }
 }
+
+return 0;
